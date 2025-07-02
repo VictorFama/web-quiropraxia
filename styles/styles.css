@@ -8,29 +8,33 @@
 /*        ESTILOS GENERALES       */
 /*--------------------------------*/
 body {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #F9F9F9;
+
   font-family: 'Lato', sans-serif;
 }
 
 .titulo {
   font-size: 3.5rem;
-  color: #2b3e6c;
+  color: #2B3E6C;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .subtitulo {
   font-size: 1.1rem;
-  color: #555;
+  color: #481985;
   margin-bottom: 3rem;
+}
+
+.texto {
+  color:#121242
 }
 
 /*--------------------------------*/
 /*             HEADER             */
 /*--------------------------------*/
 .navbar {
-  background-color: #a3b9ec;
+  background-color: #E8EEF7;
 }
 
 .navbar-nav{
@@ -38,15 +42,15 @@ body {
 }
 
 .nav-link{
-  color: #333;
+  color: #4A6FA1;
 }
 
 .nav-link:hover{
-  color: #fff;
+  color: #2A3C61;
 }
 
 .navbar .nav-link.active {
-  color: #333;
+  color: #2B3E6C;
   font-weight: bold;
 }
 
@@ -54,27 +58,31 @@ body {
   width: 100px;
 }
 
+
 /*--------------------------------*/
-/*              MAIN              */
+/*             INDEX              */
 /*--------------------------------*/
-.img-sobre-nosotros {
-  width: 500px;
+.index-container {
+  margin: 4rem auto;
 }
 
-.img-servicios {
-  width: 700px;
+.index-logo {
+  width: 37.5rem;
 }
 
-.titulo {
+.index-h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2B3E6C;
   text-align: center;
-  font-size: 2.5rem;
-  color: #2b3e6c;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
-/*         SOBRE NOSOTROS         */
+/*--------------------------------*/
+/*           Sobre Nosotros       */
+/*--------------------------------*/
 .carousel-img {
-  width: 500px;
+  width: 31rem;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -82,27 +90,35 @@ body {
 
 .sobre-nosotros-text {
   font-size: 1.1rem;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   text-align: justify;
+  color:#121242
 }
 
 .card-header-sobre-nosotros {
   background-color: #2b3e6c;
-  color: white;
+  color: #FFFFFF;
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
-/*           CONTACTO             */
+/*--------------------------------*/
+/*           Contacto             */
+/*--------------------------------*/
+.form-label-propio {
+  font-size: 1.1rem;
+  color: #121242;
+  font-weight: bold;
+}
 .form-input {
   width: 100%;
-  padding: 10px;
+  padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid;
   border-color: #2b3e6c;
   border-radius: 8px;
-  margin-top: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .form-input:focus {
@@ -113,8 +129,8 @@ body {
 
 .btn-propio{
   background-color: #2b3e6c;
-  color: white;
-  padding: 12px 40px;
+  color: #FFFF;
+  padding: 1rem 2.5rem;
   font-size: 1rem;
   border: none;
   border-radius: 6px;
@@ -122,7 +138,7 @@ body {
 }
 
 .btn-propio:hover {
-  background-color: #1d2e4a;
+  background-color: #1D2E4A;
 }
 
 /*--------------------------------*/
@@ -137,10 +153,10 @@ footer {
 
 .footer-propio {
   margin-top: 3rem;
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   background-color: #2b3e6c;
   color: #fff;
-  margin-top: 60px;
+  margin-top: 3.75rem;
   border-top: 5px solid #1d2e4a;
 }
 
@@ -150,8 +166,8 @@ footer {
 }
 
 .logo-footer {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .logo-footer:hover {
@@ -161,28 +177,28 @@ footer {
 
 
 
-
-
-
-
 /*--------------------------------*/
 /*             Tarifas            */
 /*--------------------------------*/
 
 .card-header-tarifa{
-  background-color: #2b3e6c;
-  color: white;
+  background-color: #2B3E6C;
+  color: #FFFFFF;
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
 .card-price{
   font-size: 2.5rem;
-  color: #2b3e6c;
-  margin: 20px 0;
+  color: #2B3E6C;
+  margin: 1.25rem 0;
   text-align: center;
 }
+
+/*--------------------------------*/
+/*           Media Query          */
+/*--------------------------------*/
 
 @media (max-width: 1400px) {
   .section-index{
@@ -193,13 +209,26 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 31rem;
   }
 }
 
+
 @media (max-width: 1200px) {
   .tarifa {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  .sobre-nosotros-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .servicios-text {
+    margin-top: 1.25rem;
+  }
+
+  .sobre-nosotros-text{
+    margin-top: 1.25rem;
   }
 }
 
@@ -208,27 +237,8 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 19rem;
   }
 }
 
-
-/*--------------------------------*/
-/*             INDEX              */
-/*--------------------------------*/
-.index-container {
-  margin: 4rem auto;
-}
-
-.index-logo {
-  width: 600px;
-}
-
-.index-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2b3e6c;
-  text-align: center;
-  margin-bottom: 2rem;
-}
 
