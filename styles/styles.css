@@ -79,6 +79,21 @@ body {
   margin: 0 auto;
   display: block;
 }
+
+.sobre-nosotros-text {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.card-header-sobre-nosotros {
+  background-color: #2b3e6c;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+}
+
 /*           CONTACTO             */
 .form-input {
   width: 100%;
