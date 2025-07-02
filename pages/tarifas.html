@@ -4,92 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/icon/logo.ico" type="image/x-icon">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--Stylesheet-->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Quiropraxia</title>
 </head>
 <body>
 
     <header>
-        <nav class="navbar">
-            <img src="../assets/img/logoFull.png" alt="Logo Vitalis">
-            <ul>
-                <li>
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Tarifas</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="../assets/img/logoFull.png" alt="Logo Vitalis">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="#">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Tarifas</h1>
-        <p>Ofrecemos opciones flexibles para que puedas elegir el plan que mejor se adapte a tus necesidades y presupuesto.</p>
-        
-        <section>
-            <h2>Primera Sesión</h2>
-            <p>
-                En tu primera visita realizamos una <strong>evaluación inicial completa</strong>, donde analizamos tu postura, movilidad y estado general de la columna. Este diagnóstico nos permite entender el origen de tus molestias y diseñar un plan de tratamiento personalizado según tus necesidades.
-            </p>
-            <p>
-                Además de la evaluación, incluimos tu <strong>primer ajuste quiropráctico</strong> para comenzar a aliviar tensiones y restaurar el equilibrio de tu sistema nervioso desde el primer día.
-            </p>
-            <p><strong>Precio:</strong> $15.000 por sesión</p>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="titulo">Tarifas</h1>
+                    <p class="subtitulo">
+                        Contamos con opciones flexibles para que elijas el plan que mejor se adapte a tus necesidades y presupuesto.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <section class="col-xl-3 col-md-6 col-12 tarifa">
+                    <div class="card">
+                        <div class="card-header-tarifa">Primera Sesión</div>
+                        <div class="card-body">
+                            <h5 class="card-price">$15.000</h5>
+                            <p class="card-text">
+                                En tu primera visita realizamos una <strong>evaluación completa</strong>, donde analizamos postura, movilidad y el estado general de tu columna. Esto nos permite identificar el origen de tus molestias y diseñar un plan personalizado.
+                                <br><br>
+                                Además, incluimos tu <strong>primer ajuste quiropráctico</strong>, para comenzar desde el inicio a aliviar tensiones y restaurar el equilibrio de tu sistema nervioso.
+                                <br><br>
+                                Esta sesión es clave para establecer una base sólida de trabajo y ayudarte a sentir mejoras desde el primer encuentro.
+                            </p>
+                        </div>
+                        </div>
+                </section>
 
-        <section>
-            <h2>Tarifa única</h2>
-            <p>
-                Ideal para quienes desean una sesión puntual o una atención ocasional. Esta opción es perfecta si buscás aliviar molestias específicas como dolores de espalda, cuello o tensión muscular sin necesidad de comprometerte con un plan prolongado.
-            </p>
-            <p>
-                También es una excelente alternativa para quienes ya han pasado por un tratamiento previo y necesitan un ajuste de mantenimiento o seguimiento. La sesión se adapta a tu situación del momento, brindándote alivio y mejorando tu movilidad en el corto plazo.
-            </p>
-            <p><strong>Precio:</strong> $10.000 por sesión</p>
-        </section>
+                <section class="col-xl-3 col-md-6 col-12 tarifa">
+                    <div class="card">
+                        <div class="card-header-tarifa">Tarifa única</div>
+                        <div class="card-body">
+                            <h5 class="card-price">$10.000</h5>
+                            <p class="card-text">
+                                Opción ideal si necesitás una sesión puntual para aliviar molestias como dolores de cuello, espalda o tensión muscular.
+                                <br><br>
+                                También recomendada si ya hiciste un tratamiento previo y buscás un <strong>ajuste de mantenimiento</strong> o control.
+                                <br><br>
+                                Adaptamos la sesión a tu situación del momento, con foco en tu bienestar inmediato, sin compromisos a largo plazo.
+                                <br><br>
+                                Perfecta para quienes desean una atención flexible, eficaz y sin necesidad de planes.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Plan de 6 sesiones</h2>
-            <p>
-                Este plan está diseñado para quienes buscan un tratamiento más completo y sostenido en el tiempo. Es ideal si presentás molestias crónicas, problemas posturales o deseás abordar desequilibrios que requieren un enfoque progresivo.
-            </p>
-            <p>
-                A lo largo de las 6 sesiones se realiza un seguimiento personalizado que permite evaluar tu evolución, ajustar las técnicas aplicadas y asegurar mejores resultados. Es una opción muy elegida por quienes desean ir más allá del alivio inmediato y trabajar activamente en su bienestar.
-            </p>
-            <p>
-                Además, este paquete ofrece un ahorro económico en comparación con las sesiones individuales, lo que te permite cuidar tu salud de forma más accesible y constante.
-            </p>
-            <p><strong>Precio:</strong> $55.000 (ahorrás $5.000)</p>
-        </section>
+                <section class="col-xl-3 col-md-6 col-12 tarifa">
+                    <div class="card">
+                        <div class="card-header-tarifa">Plan X6</div>
+                        <div class="card-body">
+                            <h5 class="card-price">$55.000</h5>
+                            <p class="card-text">
+                                Diseñado para quienes necesitan un abordaje más profundo, con seguimiento y evolución constante.
+                                <br><br>
+                                A lo largo de <strong>6 sesiones</strong> trabajamos sobre molestias crónicas, posturales o repetitivas, aplicando ajustes progresivos y personalizados.
+                                <br><br>
+                                Es la opción recomendada para lograr resultados sostenidos y mantener mejoras más allá del alivio inmediato.
+                                <br><br>
+                                Además, accedés a un <strong>ahorro</strong> significativo respecto a sesiones sueltas, cuidando tu salud de forma constante.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Plan de 12 sesiones</h2>
-            <p>
-                La opción más completa para quienes desean un acompañamiento continuo y profundo en su proceso de recuperación y bienestar. Este plan está pensado para tratamientos prolongados, corrección estructural, rehabilitación de lesiones o mantenimiento a largo plazo.
-            </p>
-            <p>
-                A través de 12 sesiones podrás abordar problemáticas complejas de forma progresiva, con ajustes específicos y seguimiento cercano. Es ideal para quienes priorizan el cuidado preventivo, desean sostener resultados en el tiempo o simplemente eligen incorporar la quiropraxia como parte de su estilo de vida saludable.
-            </p>
-            <p>
-                Este paquete te permite comprometerte con tu salud de manera constante, con la ventaja de un importante ahorro frente al pago por sesión individual.
-            </p>
-            <p><strong>Precio:</strong> $100.000 (ahorrás $20.000)</p>
-        </section>
+                <section class="col-xl-3 col-md-6 col-12 tarifa">
+                    <div class="card">
+                        <div class="card-header-tarifa">Plan X12</div>
+                        <div class="card-body">
+                            <h5 class="card-price">$100.000</h5>
+                            <p class="card-text">
+                                Nuestra propuesta más completa para quienes buscan un acompañamiento prolongado y resultados duraderos.
+                                <br><br>
+                                Este plan incluye <strong>12 sesiones</strong> con ajustes específicos, seguimiento cercano y abordaje integral de tu bienestar.
+                                <br><br>
+                                Ideal para quienes desean incorporar la quiropraxia como parte de su rutina de cuidado personal, prevenir recaídas y sostener mejoras a largo plazo.
+                                <br><br>
+                                También ofrece el <strong>mejor ahorro por sesión</strong>, permitiéndote invertir en tu salud con continuidad y compromiso.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
+    <footer class="footer-propio">
+        <div class="row text-center">
+            <div class="col-12">
+                <p class="footer-text">&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
+            </div>
+                <div class="col-12 d-flex justify-content-center align-items-center gap-3 mt-3">
+                <img src="../assets/icon/instagram.png" alt="Instagram" class="logo-footer">
+                <img src="../assets/icon/facebook.png" alt="Facebook" class="logo-footer">
+                <img src="../assets/icon/whatsapp.png" alt="Whatsapp" class="logo-footer">
+            </div>
+        </div>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
 </html>

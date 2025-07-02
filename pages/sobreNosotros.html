@@ -4,83 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/icon/logo.ico" type="image/x-icon">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--Stylesheet-->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Quiropraxia</title>
 </head>
 <body>
 
   <header>
-    <nav class="navbar">
-      <img src="../assets/img/logoFull.png" alt="Logo Vitalis">
-      <ul>
-        <li>
-          <a class="nav-link" href="../index.html">Inicio</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">Sobre Nosotros</a>
-        </li>
-        <li>
-          <a class="nav-link" href="./servicios.html">Servicios</a>
-        </li>
-        <li>
-          <a class="nav-link" href="./tarifas.html">Tarifas</a>
-        </li>
-        <li>
-          <a class="nav-link" href="./contacto.html">Contacto</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <img src="../assets/img/logoFull.png" alt="Logo Vitalis">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tarifas.html">Tarifas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+          </div>
+      </div>
     </nav>
   </header>
 
   <main>
-    <h1>Sobre Nosotros</h1>
-    <div>
-      <img src="../assets/img/sobreNosotros.jpg" alt="Equipo de Vitalis" class="img-sobre-nosotros">
-    </div>
-
-    <section>
-      <p>
-        En <strong>Vitalis</strong> somos un equipo de profesionales apasionados por la quiropraxia, comprometidos con mejorar tu calidad de vida a través de tratamientos personalizados. Creemos en el poder del cuerpo para sanar de forma natural cuando está correctamente alineado.
-      </p>
-      <p>
-        Nuestro objetivo es ayudarte a recuperar el equilibrio de tu columna, aliviar dolores y tensiones, y potenciar tu bienestar general. Utilizamos técnicas seguras y efectivas, adaptadas a cada persona, respetando sus tiempos, necesidades y objetivos.
-      </p>
-      <p>
-        Con años de experiencia en el cuidado quiropráctico, brindamos una atención cercana y profesional, centrada en cada paciente. Nos tomamos el tiempo para escucharte, evaluarte y acompañarte en tu camino hacia una vida más activa, saludable y libre de molestias.
-      </p>
-      <p>
-        Además de los tratamientos, promovemos la prevención y el conocimiento. Te ofrecemos consejos posturales, ejercicios y herramientas para que puedas cuidar tu salud día a día, fuera del consultorio. En nuestro centro vas a encontrar un ambiente cálido, respetuoso y dedicado exclusivamente a tu bienestar.
-      </p>
-      <p>
-        Te invitamos a conocernos y experimentar cómo la quiropraxia puede ayudarte a vivir mejor, con más energía, movilidad y tranquilidad.
-      </p>
-    </section>
-
-    <section>
-      <h2>Misión</h2>
-      <p>
-        Mejorar la salud y el bienestar de nuestros pacientes a través de la quiropraxia, ofreciendo tratamientos personalizados y un enfoque integral que promueve la sanación natural del cuerpo.
-      </p>
-
-      <h2>Visión</h2>
-      <p>
-        Ser un centro de referencia en atención quiropráctica en nuestra comunidad, reconocidos por la calidad profesional, el trato humano y el impacto positivo en la vida de las personas.
-      </p>
-
-      <h2>Valores</h2>
-      <ul>
-        <li class="li-valores"><strong>Compromiso:</strong> Nos dedicamos con responsabilidad y pasión al cuidado de cada paciente.</li>
-        <li class="li-valores"><strong>Calidez humana:</strong> Brindamos una atención cercana, respetuosa y empática.</li>
-        <li class="li-valores"><strong>Profesionalismo:</strong> Mantenemos una práctica actualizada, segura y basada en la evidencia.</li>
-        <li class="li-valores"><strong>Bienestar integral:</strong> Entendemos la salud como un equilibrio entre cuerpo, mente y entorno.</li>
-        <li class="li-valores"><strong>Prevención y educación:</strong> Promovemos hábitos saludables para una vida sin dolor.</li>
-      </ul>
-    </section>
+    <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="titulo">Sobre Nosotros</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade col-6">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../assets/img/Servicio1.png" class="carousel-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/img/Servicio2.png" class="carousel-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/img/Servicio3.png" class="carousel-img" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+            </div>
+      </div>
+              
   </main>
 
-  <footer>
-    <p>&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
-  </footer>
-    
+  <footer class="footer-propio">
+        <div class="row text-center">
+            <div class="col-12">
+                <p class="footer-text">&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
+            </div>
+                <div class="col-12 d-flex justify-content-center align-items-center gap-3 mt-3">
+                <img src="../assets/icon/instagram.png" alt="Instagram" class="logo-footer">
+                <img src="../assets/icon/facebook.png" alt="Facebook" class="logo-footer">
+                <img src="../assets/icon/whatsapp.png" alt="Whatsapp" class="logo-footer">
+            </div>
+        </div>
+    </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
 </html>

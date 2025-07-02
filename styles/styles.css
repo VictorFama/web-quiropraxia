@@ -8,64 +8,55 @@
 /*        ESTILOS GENERALES       */
 /*--------------------------------*/
 body {
-  background-color: #FAFAFA;
-  color: #FAFAFA;
+  background-color: #f4f4f4;
+  color: #333;
   font-family: 'Lato', sans-serif;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  color: #2b3e6c;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 3rem;
 }
 
 /*--------------------------------*/
 /*             HEADER             */
 /*--------------------------------*/
-header {
-  background-color: #2C5FA6;
-  color: #E0E0E0;
+.navbar {
+  background-color: #a3b9ec;
 }
 
-.navbar{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 16px;
+.navbar-nav{
+  margin-left: auto;
+}
+
+.nav-link{
+  color: #333;
+}
+
+.nav-link:hover{
+  color: #fff;
+}
+
+.navbar .nav-link.active {
+  color: #333;
+  font-weight: bold;
 }
 
 .navbar img{
   width: 100px;
-
-}
-
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.navbar ul li{
-  list-style: none;
-  border: 1px solid #E0E0E0;
-  border-radius: 10px;
-  padding: 5px 10px;
-  background-color: #7CA6D4;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #E0E0E0;
-  font-size: 1.2rem;
 }
 
 /*--------------------------------*/
 /*              MAIN              */
 /*--------------------------------*/
-main {
-  background-color: #7CA6D4;
-}
-
-.index-logo {
-  width: 300px;
-}
-
 .img-sobre-nosotros {
   width: 500px;
 }
@@ -74,27 +65,49 @@ main {
   width: 700px;
 }
 
-h1, h2 {
-  color: #E0E0E0;
-  font-family: 'Merriweather', serif;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
+.titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2b3e6c;
+  margin-bottom: 40px;
 }
 
 /*         SOBRE NOSOTROS         */
-.li-valores {
-  list-style: square;
+.carousel-img {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+/*           CONTACTO             */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid;
+  border-color: #2b3e6c;
+  border-radius: 8px;
+  margin-top: 5px;
 }
 
-/*           CONTACTO             */
-.li-contacto {
-  list-style: circle;
+.form-input:focus {
+  border: 2px solid;
+  border-color: #121242;
+  outline: none;
+}
+
+.btn-propio{
+  background-color: #2b3e6c;
+  color: white;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-propio:hover {
+  background-color: #1d2e4a;
 }
 
 /*--------------------------------*/
@@ -104,4 +117,103 @@ footer {
   background-color: #2C5FA6;
   color: #E0E0E0;
   font-size: 1.5rem;
+  text-align: center;
 }
+
+.footer-propio {
+  margin-top: 3rem;
+  padding: 40px 20px;
+  background-color: #2b3e6c;
+  color: #fff;
+  margin-top: 60px;
+  border-top: 5px solid #1d2e4a;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.logo-footer {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-footer:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*             Tarifas            */
+/*--------------------------------*/
+
+.card-header-tarifa{
+  background-color: #2b3e6c;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-price{
+  font-size: 2.5rem;
+  color: #2b3e6c;
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .section-index{
+    margin-top: 2rem;
+  }
+
+  .index-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tarifa {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .index-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+}
+
+
+/*--------------------------------*/
+/*             INDEX              */
+/*--------------------------------*/
+.index-container {
+  margin: 4rem auto;
+}
+
+.index-logo {
+  width: 600px;
+}
+
+.index-h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2b3e6c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
