@@ -1,0 +1,37 @@
+@use "../utilities/variables";
+
+.form-label-propio {
+    font-size: variables.$font-size-md;
+    color: #121242;
+    font-weight: variables.$font-negrita;
+}
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: variables.$font-size-normal;
+    border: 1px solid;
+    border-color: variables.$color-main;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+
+    &:focus{
+        border: 2px solid;
+        border-color: #121242;
+        outline: none;
+    }
+}
+
+.btn-propio{
+    background-color: variables.$color-main;
+    color: variables.$color-text-white;
+    padding: 1rem 2.5rem;
+    font-size: variables.$font-size-normal;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1D2E4A;
+    }
+}
+ 

@@ -1,0 +1,17 @@
+@use "../utilities/variables";
+
+.card-header-tarifa{
+    background-color: variables.$color-main;
+    color: variables.$color-text-white;
+    font-size: variables.$font-size-lg;
+    padding: 1.25rem;
+    text-align: center;
+
+    .card-price{
+        font-size: 2.5rem;
+        color: variables.$color-main;
+        margin: 1.25rem 0;
+        text-align: center;
+    }
+}
+

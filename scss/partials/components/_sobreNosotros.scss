@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+
+.carousel-img {
+    width: 31rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
+    .sobre-nosotros-text {
+        font-size: variables.$font-size-md;
+        margin-top: 1.25rem;
+        text-align: justify;
+        color:#121242
+    }
+}
+
+
+.card-header-sobre-nosotros {
+  background-color: variables.$color-main;
+  color: variables.$color-text-white;
+  font-size: variables.$font-size-lg;
+  padding: 1.25rem;
+  text-align: center;
+}

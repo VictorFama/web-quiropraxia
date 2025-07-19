@@ -1,0 +1,26 @@
+@use "../utilities/variables";
+
+.navbar{
+    background-color: #E8EEF7;
+
+    .navbar-nav{
+        margin-left: auto;
+        }
+
+    .nav-link{
+        color: #4A6FA1;
+
+        &:hover {
+            color: #2A3C61;
+            }
+
+        &.active {
+            color: variables.$color-main;
+            font-weight: variables.$font-negrita;
+            }
+        }
+
+    img{
+        width: 100px;
+        }
+}
