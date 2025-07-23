@@ -1,0 +1,12 @@
+@use "../utilities/variables";
+
+.btn-base {
+  background-color: variables.$color-main;
+  color: variables.$color-text-white;
+  padding: 1rem 2.5rem;
+  font-size: variables.$font-size-normal;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;  
+}
+

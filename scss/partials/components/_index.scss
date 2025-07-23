@@ -1,10 +1,22 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 .index-container {
     margin: 4rem auto;
 
     .index-logo {
         width: 37.5rem;
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            width: 20rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            width: 30rem;
+        }
+
     }
 
     .index-h2 {
@@ -16,5 +28,11 @@
     }
 }
 
+.btn-index{
+    @extend .btn-base;
 
-
+    &:hover {
+    color: variables.$color-text-white;
+    background-color: variables.$color-button-hover;
+  }
+}

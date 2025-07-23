@@ -27,7 +27,6 @@
 
 body {
   background-color: #F9F9F9;
-  font-family: "Lato", sans-serif;
 }
 body .titulo {
   font-family: "Merriweather", serif;
@@ -38,14 +37,25 @@ body .titulo {
   margin-bottom: 1.5rem;
 }
 body .subtitulo {
-  font-family: "Merriweather", serif;
-  font-size: 1.1rem;
-  color: #481985;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  color: #121242;
   margin-bottom: 3rem;
 }
 body .texto {
+  font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #121242;
+}
+
+.btn-base, .btn-propio, .btn-index {
+  background-color: #2B3E6C;
+  color: #FFFFFF;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .index-container {
@@ -53,6 +63,18 @@ body .texto {
 }
 .index-container .index-logo {
   width: 37.5rem;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .index-container .index-logo {
+    width: 20rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .index-container .index-logo {
+    width: 30rem;
+  }
 }
 .index-container .index-h2 {
   font-size: 1.5rem;
@@ -62,17 +84,28 @@ body .texto {
   margin-bottom: 2rem;
 }
 
+.btn-index:hover {
+  color: #FFFFFF;
+  background-color: #1D2E4A;
+}
+
 .carousel-img {
   width: 31rem;
   height: auto;
   margin: 0 auto;
   display: block;
 }
-.carousel-img .sobre-nosotros-text {
+
+.sobre-nosotros-text {
   font-size: 1.1rem;
   margin-top: 1.25rem;
   text-align: justify;
   color: #121242;
+}
+@media (max-width: 1200px) {
+  .sobre-nosotros-text {
+    margin-top: 1.25rem;
+  }
 }
 
 .card-header-sobre-nosotros {
@@ -83,6 +116,11 @@ body .texto {
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  .sobre-nosotros-section {
+    margin-bottom: 1.5rem;
+  }
+}
 .card-header-tarifa {
   background-color: #2B3E6C;
   color: #FFFFFF;
@@ -90,13 +128,19 @@ body .texto {
   padding: 1.25rem;
   text-align: center;
 }
-.card-header-tarifa .card-price {
+
+.card-price {
   font-size: 2.5rem;
   color: #2B3E6C;
   margin: 1.25rem 0;
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  .tarifa {
+    margin-bottom: 1.5rem;
+  }
+}
 .form-label-propio {
   font-size: 1.1rem;
   color: #121242;
@@ -118,15 +162,6 @@ body .texto {
   outline: none;
 }
 
-.btn-propio {
-  background-color: #2B3E6C;
-  color: #FFFFFF;
-  padding: 1rem 2.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
 .btn-propio:hover {
   background-color: #1D2E4A;
 }

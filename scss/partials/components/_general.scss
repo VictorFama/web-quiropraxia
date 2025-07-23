@@ -2,11 +2,10 @@
 
 body {
     background-color: #F9F9F9;
-    font-family: variables.$font-text;
-
+    
     .titulo {
         font-family: variables.$font-title;
-        font-weight: variables.$font-negrita;
+        font-weight: bold;
         font-size: 3.5rem;
         color: variables.$color-main;
         margin-top: 1.5rem;
@@ -14,15 +13,16 @@ body {
     }
 
     .subtitulo {
-        font-family: variables.$font-title;
-        font-size: variables.$font-size-md;
-        color: #481985;
+        font-family: variables.$font-text;
+        font-size: variables.$font-size-lg;
+        color: variables.$color-secondary;
         margin-bottom: 3rem;
     }
 
     .texto {
+        font-family: variables.$font-text;
         font-size: variables.$font-size-normal;
-        color:#121242
+        color:variables.$color-secondary
     }
 
 }

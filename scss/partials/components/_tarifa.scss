@@ -1,17 +1,20 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
 
 .card-header-tarifa{
-    background-color: variables.$color-main;
-    color: variables.$color-text-white;
-    font-size: variables.$font-size-lg;
-    padding: 1.25rem;
-    text-align: center;
+  @include mixins.card-header;  
+}
 
-    .card-price{
+.card-price{
         font-size: 2.5rem;
         color: variables.$color-main;
         margin: 1.25rem 0;
         text-align: center;
-    }
+}
+
+@media (max-width: 1200px) {
+  .tarifa {
+    margin-bottom: 1.5rem;
+  }
 }
 
