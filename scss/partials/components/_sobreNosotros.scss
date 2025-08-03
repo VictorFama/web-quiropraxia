@@ -1,5 +1,5 @@
 @use "../utilities/variables";
-@use "../utilities/mixins";
+@use "../utilities/mixins" as mix;
 
 .carousel-img {
     width: 31rem;
@@ -20,7 +20,7 @@
     }
 
 .card-header-sobre-nosotros {
-  @include mixins.card-header;
+  @include mix.card-header(variables.$color-main, variables.$color-text-white, variables.$font-size-lg, 1.25rem);
 }
 
 @media (max-width: 1200px)  {

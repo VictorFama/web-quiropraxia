@@ -1,9 +1,7 @@
-@use "../utilities/variables";
-
-@mixin card-header{
-  background-color: variables.$color-main;
-  color: variables.$color-text-white;
-  font-size: variables.$font-size-lg;
-  padding: 1.25rem;
+@mixin card-header ($bg-color, $text-color, $font-size, $padding){
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: $font-size;
+  padding: $padding;
   text-align: center;
 }

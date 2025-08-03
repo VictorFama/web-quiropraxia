@@ -1,8 +1,8 @@
 @use "../utilities/variables";
-@use "../utilities/mixins";
+@use "../utilities/mixins" as mix;
 
 .card-header-tarifa{
-  @include mixins.card-header;  
+  @include mix.card-header(variables.$color-main, variables.$color-text-white, variables.$font-size-lg, 1.25rem);  
 }
 
 .card-price{
