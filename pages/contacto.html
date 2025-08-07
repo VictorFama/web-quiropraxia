@@ -46,60 +46,174 @@
 
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12 text-center">
-                    <h1 class="titulo">Contacto</h1>
-                    <p class="subtitulo">
-                        Estamos para ayudarte. Completá el formulario con tus dudas o consultas y nos pondremos en contacto lo antes posible.
-                    </p>
+            <section class="section-titulo">
+                <div class="row div-titulo">
+                    <div class="col-xl-12">
+                        <h1 class="titulo">Contacto</h1>
+                        <p class="subtitulo">
+                            Estamos para ayudarte. Completá el formulario con tus dudas o consultas y nos pondremos en contacto lo antes posible.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <form class="row">
-                <div class="col-xl-6 col-12">
-                    <label for="inputNombre" class="form-label-propio">Nombre</label>
-                    <input class="form-input" type="text" class="form-control" id="inputNombre" placeholder="Victor Fama">
+            </section>
+            
+            <section class="section-formulario">
+                <form class="row">
+                    <div class="col-xl-6 col-12">
+                        <label for="inputNombre" class="form-label-propio">Nombre</label>
+                        <input class="form-input form-control" type="text" id="inputNombre" placeholder="Victor Fama">
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <label for="inputEmail" class="form-label-propio">Email</label>
+                        <input class="form-input form-control" type="email" id="inputEmail" placeholder="exaple@example.com">
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <label for="inputAddress" class="form-label-propio">Dirección</label>
+                        <input class="form-input form-control" type="text" id="inputAddress" placeholder="Calle Falsa 123">
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <label for="inputTelefono" class="form-label-propio">Telefono</label>
+                        <input class="form-input form-control" type="text" id="inputTelefono" placeholder="Sin el 0 ni el 15">
+                    </div>
+                    <div class="col-xl-12">
+                        <label for="inputMensaje" class="form-label-propio">Mensaje</label>
+                        <textarea class="form-input form-control" id="inputMensaje" rows="4" placeholder="Escriba su mensaje aquí..."></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn-propio">Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="section-preguntas">
+                <div class="row div-titulo">
+                    <div class="col-xl-12">
+                        <h2 class="titulo-secundario">Preguntas Frecuentes</h2>
+                        <p class="subtitulo">
+                            Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros servicios.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-xl-6 col-12">
-                    <label for="inputEmail" class="form-label-propio">Email</label>
-                    <input class="form-input" type="email" class="form-control" id="inputEmail" placeholder="exaple@example.com">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuánto tarda en responder el equipo una vez que envío el formulario?
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Generalmente respondemos en un plazo de <strong>24 horas hábiles</strong>. Si es urgente, escribí “Urgente” en el asunto o contactanos por WhatsApp para priorizarte.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cómo hago para agendar una consulta?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Podés completar el formulario de contacto, escribirnos por WhatsApp o llamarnos directamente. Te confirmamos por mensaje o llamada el día y hora disponibles.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Puedo cambiar o reprogramar mi turno?
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Sí. Podés reprogramar con al menos 24 horas de anticipación sin cargo. Avisanos por el canal que usaste para agendar (WhatsApp, formulario o llamada).</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Qué debo traer a mi primera consulta?
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Traé tu documento, ropa cómoda (que permita movilidad), y si tenés estudios previos relacionados (radiografías, informes), también pueden ayudar a la evaluación.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Necesito venir con dolor para hacer una evaluación?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>No. La evaluación postural también es preventiva: sirve para detectar desbalances antes de que se conviertan en dolor crónico.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            ¿Puedo hacer consultas entre sesiones?
+                        </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Sí. Parte del seguimiento incluye resolver dudas breves por mensaje o teléfono para que mantengas lo ganado sin incertidumbre.</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-6 col-12">
-                    <label for="inputAddress" class="form-label-propio">Dirección</label>
-                    <input class="form-input" type="text" class="form-control" id="inputAddress" placeholder="Calle Falsa 123">
-                </div>
-                <div class="col-xl-6 col-12">
-                    <label for="inputTelefono" class="form-label-propio">Telefono</label>
-                    <input class="form-input" type="text" class="form-control" id="inputTelefono" placeholder="Sin el 0 ni el 15">
-                </div>
-                <div class="col-xl-12">
-                    <label for="inputMensaje" class="form-label-propio">Mensaje</label>
-                    <textarea class="form-input" id="inputMensaje" rows="4" placeholder="Escriba su mensaje aquí..."></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn-propio">Enviar</button>
-                </div>
-            </form>
+            </section>
+
+            <section class="section-info">
+                <div class="row div-titulo">
+                    <div class="col-xl-12">
+                        <h2 class="titulo-secundario-light">Dónde encontrarnos</h2>
+                    </div>
+                    <div class="col-xl-4">
+                        <h3>Dirección</h3>
+                        <p>Calle falsa 123, Barrio Centro. Rosario, Santa Fe.</p>
+                        <p>Referencia: Frente al café “Balto”.</p>
+                        <h3>Horario de atención</h3>
+                        <p>Lunes a viernes: 9:00 a 19:00<br>Sábados: 9:00 a 13:00</p>
+                        <p>Atención con turno previo. Reprogramaciones sin costo con 24 h de anticipación.</p>
+                        <h3>Teléfono / WhatsApp</h3>
+                        <p>Teléfono: (011) 1234-5678</p>
+                        <p>WhatsApp: +54 9 11 2345-6789</p>
+                    </div>
+                    <div class="col-xl-8">
+                        <img src="../assets/img/mapa.webp" alt="Mapa con la localizacion de la clínica" class="img-mapa">
+                    </div>
+                </div>  
+            </section>
         </div>
     </main>
 
     <footer class="footer-propio">
-        <div class="row text-center">
-            <div class="col-12">
-                <p class="footer-text">&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
-            </div>
-            <div class="col-12 d-flex justify-content-center align-items-center gap-3 mt-3">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="../assets/icon/instagram-hover.webp" alt="Visítanos en Instagram" class="logo-footer">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="../assets/icon/facebook-hover.webp" alt="Visítanos en Facebook" class="logo-footer">
-                </a>
-                <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="../assets/icon/whatsapp-hover.webp" alt="Contáctanos por Whatsapp" class="logo-footer">
-                </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="footer-text">&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center gap-3 mt-3">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../assets/icon/instagram-hover.webp" alt="Visítanos en Instagram" class="logo-footer">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../assets/icon/facebook-hover.webp" alt="Visítanos en Facebook" class="logo-footer">
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../assets/icon/whatsapp-hover.webp" alt="Contáctanos por Whatsapp" class="logo-footer">
+                    </a>
+                </div>
             </div>
         </div>
-    </footer>
+   </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 

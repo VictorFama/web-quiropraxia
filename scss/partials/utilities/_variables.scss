@@ -1,6 +1,8 @@
 //Tipografía
 $font-text: "Lato", sans-serif;
 $font-title: "Merriweather", serif;
+$font-size-title-primary: 3.5rem;
+$font-size-title-secondary: 2.5rem;
 $font-size-lg: 1.5rem;
 $font-size-md: 1.1rem;
 $font-size-normal: 1rem;
@@ -8,5 +10,7 @@ $font-size-normal: 1rem;
 // Colores
 $color-main: #2B3E6C;
 $color-secondary: #121242;
-$color-text-white: #FFFFFF;
+$color-text-light-main: #FFFFFF;
+$color-text-light-secondary: #FCFCFC;
+
 $color-button-hover: #1D2E4A;

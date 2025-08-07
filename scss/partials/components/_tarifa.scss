@@ -1,8 +1,12 @@
 @use "../utilities/variables";
 @use "../utilities/mixins" as mix;
 
+.section-tarifas {
+    margin-top: 3.5rem;
+}
+
 .card-header-tarifa{
-  @include mix.card-header(variables.$color-main, variables.$color-text-white, variables.$font-size-lg, 1.25rem);  
+  @include mix.card-header(variables.$color-main, variables.$color-text-light-main, variables.$font-size-lg, 1.25rem);  
 }
 
 .card-price{
@@ -18,3 +22,32 @@
   }
 }
 
+
+.section-formas-pago {
+    background-color: variables.$color-main;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 3.5rem;
+
+    .img-tarifas {
+        display: block;
+        margin: 0 auto 1rem auto;
+        max-width: 100px;
+    }
+
+    p{
+      text-align: center;
+    }
+}
+
+.section-que-plan {
+    margin-top: 3.5rem;
+
+    .pregunta-que-plan {
+      @include mix.que-plan(variables.$font-size-lg, variables.$color-main, 1rem);
+      font-weight: bold;
+    };
+    .respuesta-que-plan {
+      @include mix.que-plan(variables.$font-size-md, variables.$color-secondary, 1rem);
+    }
+}

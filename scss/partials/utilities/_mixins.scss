@@ -5,3 +5,9 @@
   padding: $padding;
   text-align: center;
 }
+
+@mixin que-plan($font-size, $color, $margin-bottom) {
+  font-size: $font-size;
+  color: $color;
+  margin-bottom: $margin-bottom;
+}

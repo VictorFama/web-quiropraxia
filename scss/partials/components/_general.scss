@@ -1,28 +1,54 @@
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 body {
     background-color: #F9F9F9;
     
     .titulo {
-        font-family: variables.$font-title;
-        font-weight: bold;
-        font-size: 3.5rem;
+        @extend .titulo-base;
+        font-size: variables.$font-size-title-primary;
         color: variables.$color-main;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+    }
+
+    .titulo-secundario {
+        @extend .titulo-base;
+        font-size: variables.$font-size-title-secondary;
+        color: variables.$color-main;
+    }
+
+    .titulo-secundario-light {
+        @extend .titulo-base;
+        font-size: variables.$font-size-title-secondary;
+        color: variables.$color-text-light-main;
+
     }
 
     .subtitulo {
-        font-family: variables.$font-text;
-        font-size: variables.$font-size-lg;
+        @extend .subtitulo-base;
         color: variables.$color-secondary;
-        margin-bottom: 3rem;
+    }
+
+    .subtitulo-light {
+        @extend .subtitulo-base;
+        color: variables.$color-text-light-secondary;
     }
 
     .texto {
-        font-family: variables.$font-text;
-        font-size: variables.$font-size-normal;
+        @extend .texto-base;
         color:variables.$color-secondary
+    }
+
+    .texto-light {
+        @extend .texto-base;
+        color:variables.$color-text-light-secondary
+    }
+
+    .section-titulo{
+        margin-top: 3.5rem;
+    }
+
+    .div-titulo {
+        margin-bottom: 2rem;
     }
 
 }

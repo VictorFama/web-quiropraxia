@@ -1,11 +1,16 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
+.section-formulario{
+    margin-top: 3.5rem;
+}
+
 .form-label-propio {
     font-size: variables.$font-size-md;
     color: variables.$color-secondary;
     font-weight: bold;
 }
+
 .form-input {
     width: 100%;
     padding: 0.75rem;
@@ -29,4 +34,22 @@
     background-color: variables.$color-button-hover;
   }
 }
- 
+
+.section-preguntas{
+    margin-top: 3.5rem;
+}
+
+.section-info{
+    background-color: variables.$color-main;
+    color: variables.$color-text-light-main;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 3.5rem;
+
+    .img-mapa{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 8px;
+    }
+}

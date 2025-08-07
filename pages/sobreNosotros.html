@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--Animate-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Stylesheet-->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Quiropraxia</title>
@@ -48,91 +49,251 @@
 
   <main>
     <div class="container">
-      <div class="row">
-        <div class="col-xl-12 text-center">
-          <h1 class="titulo">Sobre Nosotros</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide col-xl-6 col-md-12" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/img/SobreNosotros1.webp" class="carousel-img" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/SobreNosotros2.webp" class="carousel-img" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/SobreNosotros3.webp" class="carousel-img" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-        <div class="col-xl-6 col-md-12 sobre-nosotros-text">
-          <section>
-            <p class="texto">
-              En <strong>Vitalis</strong> somos un equipo apasionado por la quiropraxia, comprometido con mejorar tu calidad de vida mediante tratamientos personalizados y seguros. Creemos en la capacidad natural del cuerpo para sanar cuando está correctamente alineado. Nuestro objetivo es ayudarte a recuperar el equilibrio de tu columna, aliviar dolores y tensiones, y potenciar tu bienestar general. Con años de experiencia, brindamos una atención cercana, profesional y adaptada a tus necesidades. También promovemos la prevención y el autocuidado, ofreciéndote consejos posturales, ejercicios y herramientas prácticas para tu día a día. Te invitamos a conocernos y descubrir cómo la quiropraxia puede ayudarte a vivir con más energía, movilidad y tranquilidad.
+      <section class="section-titulo">
+        <div class="row">
+          <div class="col-xl-12">
+            <h1 class="titulo">Sobre Nosotros</h1>
+            <p class="subtitulo">
+              Un enfoque humano para una columna en equilibrio
             </p>
-          </section>
-        </div>
-      </div>
-    </div>       
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 text-center">
-          <h1 class="titulo">Misión, Visión y Valores</h1>
-        </div>
-      </div>
-      <div class="row">
-        <section class="col-xl-4 col-lg-6 col-md-12 sobre-nosotros-section animate__animated animate__flipInY">
-          <div class="card">
-            <div class="card-header-sobre-nosotros">
-              Misión
-            </div>
-            <div class="card-body">
-              <p class="texto">
-                En Vitalis trabajamos para mejorar la salud y el bienestar de cada paciente a través de la quiropraxia. Brindamos tratamientos personalizados que respetan la individualidad de cada persona, promoviendo la sanación natural del cuerpo mediante un enfoque integral y humano.
-              </p>
-            </div>
           </div>
-        </section>
-        <section class="col-xl-4 col-lg-6 col-md-12 sobre-nosotros-section animate__animated animate__flipInY animate__delay-1s">
-          <div class="card">
-            <div class="card-header-sobre-nosotros">
-              Visión
+        </div>
+      </section>
+
+      <section class="section sobre-nosotros">
+        <div class="row">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide col-xl-6 col-md-12" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/img/SobreNosotros1.webp" class="carousel-img" alt="Quiropráctico aplicando un ajuste en la espalda superior de un paciente acostado boca abajo en una camilla.">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/SobreNosotros2.webp" class="carousel-img" alt="Quiropráctico explicando la columna vertebral a una paciente con un modelo óseo en su consultorio.">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/SobreNosotros3.webp" class="carousel-img" alt="Mujer estirándose con una sonrisa, representando la libertad de movimiento que ofrece la quiropraxia.">
+              </div>
             </div>
-            <div class="card-body">
-              <p class="texto">
-                Ser reconocidos como un centro de referencia en quiropraxia dentro de nuestra comunidad, destacándonos por la calidad profesional, el compromiso con cada paciente y el impacto positivo que generamos en su calidad de vida.
-              </p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
           </div>
-        </section>
-        <section class="col-xl-4 col-lg-12 col-md-12 sobre-nosotros-section animate__animated animate__flipInY animate__delay-2s">
-          <div class="card">
-            <div class="card-header-sobre-nosotros">
-              Valores
-            </div>
-            <div class="card-body">
+          <div class="col-xl-6 col-md-12 sobre-nosotros-text">
+            <article>
+              <p class="texto">
+                En <strong>Vitalis</strong> somos un equipo apasionado por la quiropraxia, comprometido con mejorar tu calidad de vida mediante tratamientos personalizados y seguros. Nuestro enfoque se basa en escuchar tu cuerpo y acompañarte con atención cercana y profesional.
+              </p>
+              <p class="texto">
+                Nuestro objetivo es ayudarte a recuperar el equilibrio de tu columna, aliviar dolores y tensiones, y potenciar tu bienestar general. También promovemos la prevención y el autocuidado ofreciéndote consejos posturales, ejercicios y herramientas prácticas para tu día a día.
+              </p>
+              <p class="texto">
+                Con años de experiencia, brindamos una atención adaptada a tus necesidades, combinando conocimiento técnico con empatía. Te invitamos a conocernos y descubrir cómo la quiropraxia puede ayudarte a vivir con más energía, movilidad y tranquilidad.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-filosofia">
+        <div class="row">
+          <div class="col-xl-12">
+            <h2 class="titulo-secundario">Misión, Visión y Valores</h2>
+            <p class="subtitulo">
+              Nuestra filosofía guía cada paso del tratamiento.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <article class="col-xl-4 col-lg-6 col-md-12 sobre-nosotros-section animate__animated animate__flipInY">
+            <div class="card">
+              <div class="card-header-sobre-nosotros">
+                Misión
+              </div>
+              <div class="card-body">
                 <p class="texto">
-                  Nos guían la empatía, la responsabilidad y el compromiso con el bienestar integral. Creemos en una atención cercana, basada en el respeto, el conocimiento actualizado y la promoción de hábitos saludables para una vida plena y sin dolor.
+                  En Vitalis trabajamos para mejorar la salud y el bienestar de cada paciente a través de la quiropraxia. Brindamos tratamientos personalizados que respetan la individualidad de cada persona, promoviendo la sanación natural del cuerpo mediante un enfoque integral y humano.
                 </p>
+              </div>
             </div>
+          </article>
+          <article class="col-xl-4 col-lg-6 col-md-12 sobre-nosotros-section animate__animated animate__flipInY animate__delay-1s">
+            <div class="card">
+              <div class="card-header-sobre-nosotros">
+                Visión
+              </div>
+              <div class="card-body">
+                <p class="texto">
+                  Ser reconocidos como un centro de referencia en quiropraxia dentro de nuestra comunidad, destacándonos por la calidad profesional, el compromiso con cada paciente y el impacto positivo que generamos en su calidad de vida.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-4 col-lg-12 col-md-12 sobre-nosotros-section animate__animated animate__flipInY animate__delay-2s">
+            <div class="card">
+              <div class="card-header-sobre-nosotros">
+                Valores
+              </div>
+              <div class="card-body">
+                  <p class="texto">
+                    Nos guían la empatía, la responsabilidad y el compromiso con el bienestar integral. Creemos en una atención cercana, basada en el respeto, el conocimiento actualizado y la promoción de hábitos saludables para una vida plena y sin dolor.
+                  </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-equipo">
+        <div class="row">
+          <div class="col-xl-12">
+            <h2 class="titulo-secundario">Nuestro equipo</h2>
+            <p class="subtitulo">
+              Tu salud en manos de profesionales que escuchan y actúan.
+            </p>
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="row">
+          <article class="col-xl-6" data-aos="fade-right" data-aos-duration="2000">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../assets/img/ValeriaDuarte.webp" class="img-fluid rounded-start" alt="Valeria Duarte, quiropráctica">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title card-equipo">Valeria Duarte</h5>
+                    <p class="card-text texto">Especialista en quiropraxia con formación integral en biomecánica y rehabilitación postural. Graduada de la Universidad Nacional de Córdoba con diplomados en terapia manual y tratamiento de desórdenes de la columna vertebral. Combina técnicas modernas y un enfoque centrado en el paciente para aliviar dolor, mejorar la función y prevenir recaídas.</p>
+                    <p class="card-text card-equipo-footer">10 años de experiencia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-6" data-aos="fade-left" data-aos-duration="2000">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../assets/img/CarlosEstevez.webp" class="img-fluid rounded-start" alt="Carlos Estevez, quiropráctico">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title card-equipo">Carlos Estevez</h5>
+                    <p class="card-text texto">Quiropráctico senior con especialización en salud vertebral y neurofuncional. Egresado de la Universidad de Chile con formación avanzada en ajustes espinales, terapia de tejidos blandos y prevención de lesiones crónicas. Reconocido por su enfoque basado en evidencia y su habilidad para tratar pacientes con dolor lumbar, cervical y disfunciones posturales complejas.</p>
+                    <p class="card-text card-equipo-footer">20 años de experiencia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-6" data-aos="fade-right" data-aos-duration="2000">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../assets/img/MateoRamirez.webp" class="img-fluid rounded-start" alt="Mateo Ramirez, quiropráctico">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title card-equipo">Mateo Ramirez</h5>
+                    <p class="card-text texto">Quiropráctico con formación en salud musculoesquelética y prevención de lesiones. Graduado de la Universidad de Buenos Aires, con especialización en terapias de corrección postural y rehabilitación funcional. Aplica un enfoque personalizado y moderno para mejorar la movilidad y reducir el dolor en pacientes de todas las edades.</p>
+                    <p class="card-text card-equipo-footer">5 años de experiencia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-6" data-aos="fade-left" data-aos-duration="2000">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../assets/img/AbrilFernandez.webp" class="img-fluid rounded-start" alt="Abril Fernandez, quiropráctica">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title card-equipo">Abril Fernandez</h5>
+                    <p class="card-text texto">Quiropráctica con enfoque en equilibrio postural y manejo del dolor crónico. Egresada de la Universidad Nacional Autónoma de México con especialización en terapias manuales y rehabilitación funcional. Integra evaluación dinámica y técnicas personalizadas para optimizar la salud de la columna y mejorar la calidad de vida de sus pacientes.</p>
+                    <p class="card-text card-equipo-footer">8 años de experiencia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-testimonial">
+        <div class="row">
+          <div class="col-xl-12">
+            <h2 class="titulo-secundario-light">Lo que dicen nuestros pacientes</h2>
+            <p class="subtitulo-light">
+              Historias reales de recuperacion y bienestar.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <article class="col-xl-12" data-aos="fade-right" data-aos-duration="2000">
+            <div class="card card-testimonial">
+              <div class="card-header">
+                Lucía Fernández
+              </div>
+              <div class="card-body">
+                <p class="card-text texto">Desde que empecé el tratamiento en Vitalis noté un cambio profundo. Venía con dolor lumbar crónico que me limitaba en el trabajo y en el deporte, y en pocas sesiones recuperé movilidad y dormía sin molestias. Me encantó el enfoque personalizado, la explicación clara de lo que pasaba en mi cuerpo y el seguimiento que me dieron.</p>
+              </div>
+              <div class="card-footer text-body-secondary">
+                <img src="../assets/img/5estrellas.webp" alt="5 Estrellas de valoración" class="icon-footer">
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-6" data-aos="fade-right" data-aos-duration="2000">
+            <div class="card card-testimonial">
+              <div class="card-header">
+                Mateo García
+              </div>
+              <div class="card-body">
+                <p class="card-text texto">Excelente atención y resultados rápidos. Llegué con dolor de cuello que me complicaba el día a día y en pocas sesiones me fui sin molestias, con ejercicios sencillos para mantenerlo.</p>
+              </div>
+              <div class="card-footer">
+                <img src="../assets/img/5estrellas.webp" alt="5 Estrellas de valoración" class="icon-footer">
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-6" data-aos="fade-right" data-aos-duration="2000">
+            <div class="card card-testimonial">
+              <div class="card-header">
+                Agustina López
+              </div>
+              <div class="card-body">
+                <p class="card-text texto">Muy buena experiencia: me ayudaron con mi postura y la tensión en los hombros, casi no tengo molestias. Lo único que me hubiera gustado es un poco más de guía para el mantenimiento en casa.</p>
+              </div>
+              <div class="card-footer text-body-secondary">
+                <img src="../assets/img/4.5estrellas.webp" alt="4.5 Estrellas de valoración" class="icon-footer">
+              </div>
+            </div>
+          </article>
+          <article class="col-xl-12" data-aos="fade-right" data-aos-duration="2000">
+            <div class="card card-testimonial">
+              <div class="card-header">
+                Diego Ramírez
+              </div>
+              <div class="card-body">
+                <p class="card-text texto">El trato fue cercano y profesional. Noté mejoría en mi energía y en la rigidez matutina después de varias sesiones, aunque todavía estoy terminando el plan para consolidar los cambios. Recomendable si estás dispuesto a comprometerte con el proceso.</p>
+              </div>
+              <div class="card-footer text-body-secondary">
+                <img src="../assets/img/4estrellas.webp" alt="4 Estrellas de valoración" class="icon-footer">
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
   </main>
 
   <footer class="footer-propio">
-    <div class="row text-center">
+    <div class="row">
       <div class="col-12">
         <p class="footer-text">&copy; 2025 Quiropraxia. Todos los derechos reservados.</p>
       </div>
@@ -151,6 +312,10 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

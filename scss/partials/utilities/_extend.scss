@@ -2,7 +2,7 @@
 
 .btn-base {
   background-color: variables.$color-main;
-  color: variables.$color-text-white;
+  color: variables.$color-text-light-main;
   padding: 1rem 2.5rem;
   font-size: variables.$font-size-normal;
   border: none;
@@ -10,3 +10,20 @@
   cursor: pointer;  
 }
 
+
+.titulo-base{
+  font-family: variables.$font-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitulo-base{
+  font-family: variables.$font-text;
+  font-size: variables.$font-size-lg;
+  text-align: center;
+}
+
+.texto-base{
+  font-family: variables.$font-text;
+  font-size: variables.$font-size-normal;
+}
