@@ -86,25 +86,25 @@ body .div-titulo {
   margin-bottom: 2rem;
 }
 
-.index-container {
-  margin: 4rem auto;
+.section-vitalis {
+  margin-top: 3.5rem;
 }
-.index-container .index-logo {
+.section-vitalis .index-logo {
   width: 37.5rem;
   display: block;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .index-container .index-logo {
+  .section-vitalis .index-logo {
     width: 20rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .index-container .index-logo {
+  .section-vitalis .index-logo {
     width: 30rem;
   }
 }
-.index-container .index-h2 {
+.section-vitalis .index-h2 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #2B3E6C;
