@@ -73,12 +73,10 @@
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 3.5rem;
+    overflow-x: hidden;
 }
 
-.section-filosofia {
+.section-filosofia, .section-equipo{
     margin-top: 3.5rem;
-}
-
-.section-equipo {
-    margin-top: 3.5rem;
+    overflow-x: hidden;
 }

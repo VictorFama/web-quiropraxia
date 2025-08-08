@@ -134,6 +134,10 @@ body .div-titulo {
   margin-top: 3.5rem;
   text-align: center;
 }
+.section-proceso img {
+  width: 7rem;
+  margin-bottom: 1rem;
+}
 
 .carousel-img {
   width: 31rem;
@@ -207,18 +211,17 @@ body .div-titulo {
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 3.5rem;
+  overflow-x: hidden;
 }
 
-.section-filosofia {
+.section-filosofia, .section-equipo {
   margin-top: 3.5rem;
-}
-
-.section-equipo {
-  margin-top: 3.5rem;
+  overflow-x: hidden;
 }
 
 .section-tarifas {
   margin-top: 3.5rem;
+  overflow-x: hidden;
 }
 
 .card-header-tarifa {
