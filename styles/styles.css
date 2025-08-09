@@ -82,9 +82,13 @@ body .texto-light {
 body .section-titulo {
   margin-top: 3.5rem;
 }
+body .div-titulo {
+  margin-bottom: 2rem;
+}
 
 .section-vitalis {
   margin-top: 3.5rem;
+  overflow: hidden;
 }
 .section-vitalis .index-logo {
   width: 37.5rem;
