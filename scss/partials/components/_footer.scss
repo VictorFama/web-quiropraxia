@@ -9,19 +9,17 @@
   margin-top: 3.75rem;
   padding: 2.5rem 1.25rem;
   border-top: 5px solid #1d2e4a;
-
   .footer-text {
-    font-size: variables.$font-size-normal;
-    margin-bottom: 10px;
-  }
-
-  .logo-footer {
-    width: 1.875rem;
-    height: 1.875rem;
-
-    &:hover {
-      transform: scale(1.1);
-      cursor: pointer;
+      font-size: variables.$font-size-normal;
+      margin-bottom: 10px;
     }
-  }
+  .logo-footer {
+      width: 1.875rem;
+      height: 1.875rem;
+
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-@mixin card-header ($bg-color, $text-color, $font-size, $padding){
+@mixin card-header ($bg-color, $text-color, $font-size, $padding) {
   background-color: $bg-color;
   color: $text-color;
   font-size: $font-size;

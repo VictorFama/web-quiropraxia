@@ -2,22 +2,18 @@
 
 .servicios {
     margin-top: 3.5rem;
-
     .section-dark {
         background-color: variables.$color-main;
         padding: 1.5rem;
         border-radius: 8px;
-
-        h3{
+        h3 {
             color: variables.$color-text-light-main
         }
-
-        ul{
+        ul {
             color: variables.$color-text-light-secondary;
             list-style-type: disc;
         }
-
-        p{
+        p {
             color: variables.$color-text-light-secondary;
             font-size: variables.$font-size-md;
         }
@@ -26,17 +22,14 @@
     .section-light {
         padding: 1.5rem;
         border-radius: 8px;
-
         h3{
             color: variables.$color-main;
         }
-
         ul{
             color: variables.$color-secondary;
             list-style-type: disc;
         }
-
-        p{
+        p {
             color: variables.$color-secondary;
             font-size: variables.$font-size-md;
         }

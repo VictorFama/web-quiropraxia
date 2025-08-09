@@ -3,22 +3,17 @@
 
 .section-vitalis {
     margin-top: 3.5rem;
-
     .index-logo {
         width: 37.5rem;
         display: block;
         margin: 0 auto;
-
         @media (max-width: 768px) {
             width: 20rem;
         }
-
         @media (min-width: 768px) and (max-width: 1200px) {
             width: 30rem;
         }
-
     }
-
     .index-h2 {
         font-size: variables.$font-size-lg;
         font-weight: 700;
@@ -26,15 +21,13 @@
         text-align: center;
         margin-bottom: 2rem;
     }
-}
-
-.btn-index{
-    @extend .btn-base;
-
-    &:hover {
-    color: variables.$color-text-light-main;
-    background-color: variables.$color-button-hover;
-  }
+    .btn-index {
+        @extend .btn-base;
+        &:hover {
+            color: variables.$color-text-light-main;
+            background-color: variables.$color-button-hover;
+        }
+    }
 }
 
 .section-elegirnos {
@@ -44,19 +37,16 @@
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-
-
     img{
         width: 7rem;
         margin-bottom: 1rem;
     }
 }
 
-.section-proceso{
+.section-proceso {
     margin-top: 3.5rem;
     text-align: center;
-
-    img{
+    img {
         width: 7rem;
         margin-bottom: 1rem;
     }

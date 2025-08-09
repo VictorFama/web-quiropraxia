@@ -25,7 +25,7 @@
   width: 100px;
 }
 
-.btn-base, .btn-propio, .btn-index {
+.btn-base, .section-formulario .btn-propio, .section-vitalis .btn-index {
   background-color: #2B3E6C;
   color: #FFFFFF;
   padding: 1rem 2.5rem;
@@ -82,9 +82,6 @@ body .texto-light {
 body .section-titulo {
   margin-top: 3.5rem;
 }
-body .div-titulo {
-  margin-bottom: 2rem;
-}
 
 .section-vitalis {
   margin-top: 3.5rem;
@@ -111,8 +108,7 @@ body .div-titulo {
   text-align: center;
   margin-bottom: 2rem;
 }
-
-.btn-index:hover {
+.section-vitalis .btn-index:hover {
   color: #FFFFFF;
   background-color: #1D2E4A;
 }
@@ -139,118 +135,110 @@ body .div-titulo {
   margin-bottom: 1rem;
 }
 
-.carousel-img {
-  width: 31rem;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-
-.card {
-  position: relative;
-  z-index: 1;
-}
-
 .section-sobre-nosotros {
   margin-top: 3.5rem;
 }
-
-.sobre-nosotros-text {
+.section-sobre-nosotros .sobre-nosotros-text {
   font-size: 1.1rem;
   margin-top: 1.25rem;
   text-align: justify;
   color: #121242;
 }
 @media (max-width: 1200px) {
-  .sobre-nosotros-text {
+  .section-sobre-nosotros .sobre-nosotros-text {
     margin-top: 1.25rem;
   }
 }
+.section-sobre-nosotros .carousel-img {
+  width: 31rem;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 
-.card-header-sobre-nosotros {
+.section-filosofia {
+  margin-top: 3.5rem;
+  overflow: hidden;
+}
+.section-filosofia .card-header-filosofia {
   background-color: #2B3E6C;
   color: #FFFFFF;
   font-size: 1.5rem;
   padding: 1.25rem;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .section-filosofia .article-filosofia {
+    margin-bottom: 1.5rem;
+  }
+}
 
-.card-equipo {
+.section-equipo {
+  margin-top: 3.5rem;
+  overflow: hidden;
+}
+.section-equipo .card-equipo {
   font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 1.5rem;
   color: #121242;
 }
-
-.card-equipo-footer {
+.section-equipo .card-equipo-footer {
   font-size: 0.875rem;
   color: gray;
 }
 
-.card-testimonial {
-  margin-bottom: 1rem;
-  font-family: "Lato", sans-serif;
-}
-.card-testimonial .card-header {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #121242;
-}
-.card-testimonial .card-footer {
-  text-align: center;
-}
-
-@media (max-width: 1200px) {
-  .sobre-nosotros-section {
-    margin-bottom: 1.5rem;
-  }
-}
 .section-testimonial {
   background-color: #2B3E6C;
   color: #FFFFFF;
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 3.5rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-
-.section-filosofia, .section-equipo {
-  margin-top: 3.5rem;
-  overflow-x: hidden;
+.section-testimonial .card-testimonial {
+  margin-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+}
+.section-testimonial .card-testimonial .card-header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #121242;
+}
+.section-testimonial .card-testimonial .card-footer {
+  text-align: center;
 }
 
 .section-tarifas {
   margin-top: 3.5rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-
-.card-header-tarifa {
+.section-tarifas .card-header-tarifa {
   background-color: #2B3E6C;
   color: #FFFFFF;
   font-size: 1.5rem;
   padding: 1.25rem;
   text-align: center;
 }
-
-.card-price {
+.section-tarifas .card-price {
   font-size: 2.5rem;
   color: #2B3E6C;
   margin: 1.25rem 0;
   text-align: center;
 }
-
 @media (max-width: 1200px) {
-  .tarifa {
+  .section-tarifas .article-tarifa {
     margin-bottom: 1.5rem;
   }
 }
+
 .section-formas-pago {
   background-color: #2B3E6C;
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 3.5rem;
 }
-.section-formas-pago .img-tarifas {
+.section-formas-pago .img-pagos {
   display: block;
   margin: 0 auto 1rem auto;
   max-width: 100px;
@@ -277,14 +265,12 @@ body .div-titulo {
 .section-formulario {
   margin-top: 3.5rem;
 }
-
-.form-label-propio {
+.section-formulario .form-label-propio {
   font-size: 1.1rem;
   color: #121242;
   font-weight: bold;
 }
-
-.form-input {
+.section-formulario .form-input {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
@@ -293,13 +279,12 @@ body .div-titulo {
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
-.form-input:focus {
+.section-formulario .form-input:focus {
   border: 2px solid;
   border-color: #121242;
   outline: none;
 }
-
-.btn-propio:hover {
+.section-formulario .btn-propio:hover {
   background-color: #1D2E4A;
 }
 

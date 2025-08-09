@@ -1,22 +1,9 @@
 @use "../utilities/variables";
 @use "../utilities/mixins" as mix;
 
-.carousel-img {
-    width: 31rem;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-.card{
-    position: relative;
-    z-index: 1;
-}
-
 .section-sobre-nosotros {
     margin-top: 3.5rem;
-}
-.sobre-nosotros-text {
+    .sobre-nosotros-text {
         font-size: variables.$font-size-md;
         margin-top: 1.25rem;
         text-align: justify;
@@ -26,46 +13,41 @@
         margin-top: 1.25rem;
         }
     }
-
-.card-header-sobre-nosotros {
-  @include mix.card-header(variables.$color-main, variables.$color-text-light-main, variables.$font-size-lg, 1.25rem);
+    .carousel-img {
+        width: 31rem;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
-.card-equipo {
-    font-family: variables.$font-text;
-    text-align: center;
-    font-size: variables.$font-size-lg;
-    color: variables.$color-secondary;
-
-
+.section-filosofia {
+    margin-top: 3.5rem;
+    overflow: hidden;
+    .card-header-filosofia {
+        @include mix.card-header(variables.$color-main, variables.$color-text-light-main, variables.$font-size-lg, 1.25rem);
+    }
+    .article-filosofia {
+        @media (max-width: 1200px) {
+            margin-bottom: 1.5rem;
+        }
+    }
 }
 
-.card-equipo-footer{
-    font-size: 0.875rem;
-    color: gray;
-}
-
-.card-testimonial{
-    margin-bottom: 1rem;
-    font-family: variables.$font-text;
-
-    .card-header{
+.section-equipo{
+    margin-top: 3.5rem;
+    overflow: hidden;
+    .card-equipo {
+        font-family: variables.$font-text;
         text-align: center;
         font-size: variables.$font-size-lg;
         color: variables.$color-secondary;
     }
-
-    .card-footer{
-        text-align: center;
+    .card-equipo-footer{
+        font-size: 0.875rem;
+        color: gray;
     }
 }
-
-@media (max-width: 1200px)  {
-    .sobre-nosotros-section {
-       margin-bottom: 1.5rem;
-    }
-}
-
 
 .section-testimonial {
     background-color: variables.$color-main;
@@ -73,10 +55,17 @@
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 3.5rem;
-    overflow-x: hidden;
-}
-
-.section-filosofia, .section-equipo{
-    margin-top: 3.5rem;
-    overflow-x: hidden;
+    overflow: hidden;
+    .card-testimonial{
+        margin-bottom: 1rem;
+        font-family: variables.$font-text;
+        .card-header{
+            text-align: center;
+            font-size: variables.$font-size-lg;
+            color: variables.$color-secondary;
+        }
+        .card-footer{
+            text-align: center;
+        }
+    }
 }

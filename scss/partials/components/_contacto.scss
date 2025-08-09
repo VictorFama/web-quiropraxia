@@ -1,51 +1,45 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
-.section-formulario{
+.section-formulario {
     margin-top: 3.5rem;
-}
-
-.form-label-propio {
-    font-size: variables.$font-size-md;
-    color: variables.$color-secondary;
-    font-weight: bold;
-}
-
-.form-input {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: variables.$font-size-normal;
-    border: 1px solid;
-    border-color: variables.$color-main;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-
-    &:focus{
-        border: 2px solid;
-        border-color: variables.$color-secondary;
-        outline: none;
+    .form-label-propio {
+        font-size: variables.$font-size-md;
+        color: variables.$color-secondary;
+        font-weight: bold;
+    }
+    .form-input {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: variables.$font-size-normal;
+        border: 1px solid;
+        border-color: variables.$color-main;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        &:focus{
+            border: 2px solid;
+            border-color: variables.$color-secondary;
+            outline: none;
+        }
+    }
+    .btn-propio{
+        @extend .btn-base;
+        &:hover {
+            background-color: variables.$color-button-hover;
+        }
     }
 }
 
-.btn-propio{
-    @extend .btn-base;
-
-    &:hover {
-    background-color: variables.$color-button-hover;
-  }
-}
-
-.section-preguntas{
+.section-preguntas {
     margin-top: 3.5rem;
 }
 
-.section-info{
+.section-info {
     background-color: variables.$color-main;
     color: variables.$color-text-light-main;
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 3.5rem;
-
     .img-mapa{
         display: block;
         margin: 0 auto;
@@ -53,3 +47,4 @@
         border-radius: 8px;
     }
 }
+
